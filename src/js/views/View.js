@@ -56,7 +56,7 @@ export default class View {
     }
 
     renderError(message = this._errorMessage) {
-        const markup = `
+        const htmlMarkup = `
         <div class="error">
             <div>
                 <svg>
@@ -67,6 +67,6 @@ export default class View {
         </div> 
         `;
         this._clear();
-        this._parentElement.insertAdjacentHTML('afterbegin', markup);
+        this._parentElement.insertAdjacentHTML('afterbegin', htmlMarkup);
     }
 }
