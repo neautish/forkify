@@ -2,9 +2,11 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "recipe app",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 5 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build ./index.html"
+    "build": "parcel build index.html --no-scope-hoist"
   },
   "author": "neautish",
   "license": "ISC",
